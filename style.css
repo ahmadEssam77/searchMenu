@@ -1,0 +1,76 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+/* Modern FlexBox - to let the two divs next to each others */
+.container {
+    display: flex;
+}
+
+/* the left div */
+.left {
+    flex-basis: 25%;
+    background-color: rgb(185, 182, 182);
+    padding: 15px 0;
+}
+
+/* the right div */
+.right {
+    flex-basis: 75%;
+    background-color: rgb(202, 200, 200);
+    padding: 15px;
+}
+
+/* Styling the headding inside the two divs */
+.left h2 {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.right h1 {
+    margin-bottom: 15px 20px;
+}
+
+/* Styling the search bar */
+.left .searchBar {
+    width: 100%;
+    padding: 15px;
+    border-style: none;
+    /* outline: none; */
+    font-size: 18px;
+}
+
+/* Styling the category list in left div */
+.left ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left ul li {
+    margin-bottom: 15px;
+}
+
+/* Styling hover on the items list and links */
+.left ul a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 9px;
+}
+
+.left ul a:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+/* Playing with media query */
+@media screen and (max-width: 600px) {
+    .left {
+        flex-basis: 45%; 
+    }
+
+    .right {
+        flex-basis: 55%;
+    }
+}

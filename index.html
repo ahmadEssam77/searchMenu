@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Search-Menu</title>
+</head>
+<body>
+    <!-- Intro -->
+    <h1>Search/Filter Menu</h1>
+    <p>How to search for links in a navigation menu:</p>
+    <!-- Flex container div contains two divs -->
+    <div class="container">
+        <!-- Left div with the menu and search bar -->
+        <div class="left">
+            <h2>Menu</h2>
+            <form>
+                <input type="text" placeholder="Search.." class="searchBar" id="mySearch" title="Type in a category" onkeyup="myFunction()">
+            </form>
+            <ul id="myMenu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Jquery</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Node.Js</a></li>
+                <li><a href="#">Git</a></li>
+            </ul>
+        </div>
+        <!-- The right div for contents -->
+        <div class="right">
+            <h1>Page Content</h1>
+            <p>This is for testing, this is for testing. Again this is for testing, for the last one this is for testing.</p>
+            <p>This is for testing, this is for testing. Again this is for testing, for the last one this is for testing.</p>
+            <p>This is for testing, this is for testing. Again this is for testing, for the last one this is for testing.</p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
